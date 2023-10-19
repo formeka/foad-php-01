@@ -29,7 +29,7 @@ $persons = json_decode(file_get_contents('./data/persons.json'),true);
             <p>Nom: <?=$val['name']?></p>
             <p>Age: <?=$val['age']?></p>
             <p>Couleur des yeux : <?=$val['eyeColor']?></p>
-            <p>Email: email de la personne : <?=$val['email']?></p>
+            <p>Email: <?=$val['email']?></p>
             <p>Fruit favori : <?=$val['favoriteFruit']?></p>
 
             <p><?=$val['isActive'] ? 'ACTIF' : '' ?></p>
