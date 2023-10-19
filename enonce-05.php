@@ -1,5 +1,5 @@
 <?php
-$persons = json_decode(file_get_contents('https://randomuser.me/api/?results=20'), true);
+$persons = json_decode(file_get_contents('https://randomuser.me/api/?results=20&nat=fr'), true);
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -33,6 +33,7 @@ $persons = json_decode(file_get_contents('https://randomuser.me/api/?results=20'
         }
         .surligne {
             text-decoration: underline;
+            background-color: yellow;
         }
     </style>
 </head>
